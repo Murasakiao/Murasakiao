@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Engineering Surver Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Electrical Engineering Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" name="name" type="text" placeholder="Enter your name: Engr." required /></label>
+        <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required /></label>
+        <label for="age" id="number-label">Age (optional) <input id="number" type="number" min="13" max="120" placeholder="Age" /></label>
+        <label>Which career path do you want to take after graduation?
+          <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Electrical Engineer</option>
+            <option value="2">Electrician</option>
+            <option value="3">Electrical Engineering Instructor</option>
+          </select>
+        </label>
+        <label>Would you recommend Electrical Engineering to a friend?
+          <label><input type="radio" value="1" name="recommend" class="inline">Definitely</label>
+          <label><input type="radio" value="2" name="recommend" class="inline">Maybe</label>
+          <label><input type="radio" value="3" name="recommend" class="inline">Not sure</label>
+        </label>
+        <label>What comppanies do you want to apply for? (Check all that apply)
+          <label><input type="checkbox" value="1" class="inline">The Boring Company</label>
+          <label><input type="checkbox" value="2" class="inline">Tesla</label>
+          <label><input type="checkbox" value="3" class="inline">Boston Robotics</label>
+          <label><input type="checkbox" value="4" class="inline">GoldenGate Electric Corp.</label>
+          <label><input type="checkbox" value="5" class="inline">Meralco</label>
+          <label><input type="checkbox" value="6" class="inline">Esamelco</label>
+        </label>
+        <label>Add a description: 
+          <textarea placeholder="Enter your plans for the future here..."></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
